@@ -1,5 +1,5 @@
 .SearchInput{
-    max-width: 1024px;
+    max-width: 1400px;
     width: 100%;
     border: none;
     height: 42px;
@@ -37,16 +37,21 @@
 }
 
 .PoweredBy{
+    display: flex;
+    flex-direction: row;
     height: 15px;
-    width: fit-content;
-    position: absolute;
-    right: 100px;
+    width: 200px;
+    position: relative;
+    left: -150px;
+    bottom: 5px;
+    /* hide at min width of 1045px */
+
 }
 
 #PoweredByText{
     font-weight: 100;
     font-size: medium;
-    height: 15px;    
+    height: 15px;  
 }
 
 .PoweredByImg{
