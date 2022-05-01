@@ -1,0 +1,25 @@
+.HeaderBox{
+    background-color: #FF742B;
+    height: 51px;
+    max-width: 1600px;
+    width: 100vw;
+    padding: 4px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#SearchLabel{
+    font-size: 18px;
+    line-height: 1;
+    color: #000;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 118px;
+    font-weight: 100;
+    text-align: left;
+    margin: 0px 5px 0px 0px;
+
+}

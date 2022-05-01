@@ -17,4 +17,8 @@ function SearchBarInput() {
   )
 }
 
+<<<<<<< HEAD
 export default SearchBarInput;
+=======
+export default SearchBarInput
+>>>>>>> 3198262ba4f22137900dae2217532ecdf2e6311a

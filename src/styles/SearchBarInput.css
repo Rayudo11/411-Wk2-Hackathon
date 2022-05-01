@@ -1,0 +1,57 @@
+.SearchInput{
+    max-width: 1024px;
+    width: 100%;
+    border: none;
+    height: 42px;
+    box-shadow: none;
+    padding: 16px 144px 16px 50px;
+    font-weight: 300;
+    background-color: #fff;
+    color: rgba(0, 0, 0, .75);
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    text-align: start;
+
+}
+
+.SearchBarWrapper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.SearchIcon{
+  position: absolute;
+  top: 10px;  
+  left: 5px;
+  
+}
+
+.SearchInput{
+    font-size: large;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+.PoweredBy{
+    height: 15px;
+    width: fit-content;
+    position: absolute;
+    right: 100px;
+}
+
+#PoweredByText{
+    font-weight: 100;
+    font-size: medium;
+    height: 15px;    
+}
+
+.PoweredByImg{
+    height: 15px;
+    width: auto;
+    position: relative;
+    top: 3px;
+}
