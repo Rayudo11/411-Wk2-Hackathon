@@ -12,6 +12,10 @@
     gap: 10px;
 }
 
+.SearchLabelWrapper{
+    text-align: left;
+}
+
 
 .SearchLabel{
     font-size: 16px;
@@ -22,6 +26,5 @@
     width: 100%;
     font-weight: 500;
     text-align: left;
-    margin: 0px 5px 0px 0px;
-
+    margin: 0px 15px 0px 10px;
 }
