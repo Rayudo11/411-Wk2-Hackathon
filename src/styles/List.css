@@ -1,0 +1,51 @@
+#dataUL {
+ margin: 0px;
+ padding: 16px;
+ background-color: #F6F6EF;
+}
+
+.mapData {
+ list-style: none;
+ margin-bottom: 9px;
+}
+
+
+.title {
+ font-size: 14px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: black;
+}
+
+.url {
+ color: #828282;
+ font-size: 13px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-decoration: none;
+}
+
+.url:hover {
+ text-decoration: underline;
+}
+
+.details {
+ color: #696969;
+ font-size: 11px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ text-decoration: none;
+}
+
+.points:hover {
+ text-decoration: underline;
+}
+
+.author:hover {
+ text-decoration: underline;
+}
+
+.time:hover {
+ text-decoration: underline;
+}
+
+.comments:hover {
+ text-decoration: underline;
+}
