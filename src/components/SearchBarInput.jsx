@@ -17,4 +17,4 @@ function SearchBarInput() {
   )
 }
 
-export default SearchBarInput
+export default SearchBarInput;

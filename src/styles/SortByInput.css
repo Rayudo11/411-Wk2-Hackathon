@@ -1,0 +1,36 @@
+.SortBySection {
+ margin-top: 10px;
+}
+
+.LabelOne {
+    margin-left: 10px;
+    padding-right: 10px; 
+}
+
+.SelectOne {
+    padding: 0px;
+    background-color: lightgray;
+    
+    padding-right: 0px;
+}
+.LabelTwo {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.SelectTwo {
+    background-color: lightgray;
+}
+
+.LabelThree {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.SelectThree {
+    background-color: lightgray;
+}
+.ShareImage {
+    float: right;
+    height: 15px;
+}
