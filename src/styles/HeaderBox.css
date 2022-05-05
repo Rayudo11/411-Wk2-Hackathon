@@ -4,6 +4,7 @@
     max-width: 1600px;
     width: 100vw;
     padding: 4px;
+    margin: 0 auto;
     position: sticky;
     display: flex;
     flex-direction: row;
@@ -11,15 +12,19 @@
     gap: 10px;
 }
 
-#SearchLabel{
-    font-size: 18px;
+.SearchLabelWrapper{
+    text-align: left;
+}
+
+
+.SearchLabel{
+    font-size: 16px;
     line-height: 1;
     color: #000;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 118px;
-    font-weight: 100;
+    width: 100%;
+    font-weight: 500;
     text-align: left;
-    margin: 0px 5px 0px 0px;
-
+    margin: 0px 15px 0px 10px;
 }
