@@ -18,9 +18,25 @@ let App = () => {
   .then(data => setApiData(data.hits))
  },[])
 
+
+ useEffect(() => {
+const filterSearch = (term) => {
+  console.log(term)
+  return(item) => {
+    console.log(item, 'im the item!!!!!!'); 
+    return item.apiData.title.toLowerCase().includes(term.toLowerCase())
+  }
+};
+ }, [apiData]);
+
+
+
  return (
   <div className="App">
-   <HeaderBar />
+   <HeaderBar 
+    state={searchTerm}
+    setState={setSearchTerm}
+   />
    <SortByInput/>
    <List data={apiData}/>
     </div >
@@ -28,3 +44,7 @@ let App = () => {
  }
 
 export default App;
+
+
+
+

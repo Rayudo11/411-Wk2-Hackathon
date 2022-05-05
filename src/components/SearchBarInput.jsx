@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 
 import "../styles/SearchBarInput.css";
 
-function SearchBarInput() {
+function SearchBarInput(props) {
+  const {
+    state,
+    setState,
+  } = props
+  console.log(state)
+
+
   return (
     <div className="SearchBarWrapper">
       <span className="SearchIcon">
@@ -20,6 +27,7 @@ function SearchBarInput() {
         className="SearchInput"
         type={"search"}
         placeholder={"Search stories by title, url or author"}
+        onChange={e => setState(e.target.value)}
       ></input>
       <span className="PoweredBy">
         <span id="PoweredByText">
