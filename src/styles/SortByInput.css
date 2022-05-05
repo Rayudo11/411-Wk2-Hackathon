@@ -1,36 +1,35 @@
 .SortBySection {
- margin-top: 10px;
+ padding-top: 10px;
+ padding: 10px 0;
+ background-color: #F6F6EF;
+ max-width: 1609px;
+ width: 100vw;
 }
 
 .LabelOne {
     margin-left: 10px;
     padding-right: 10px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
 }
 
-.SelectOne {
-    padding: 0px;
-    background-color: lightgray;
-    
-    padding-right: 0px;
+.SelectOne, .SelectTwo, .SelectThree {
+    background-color: #F6F6EF;
+    padding: 5px 0px;
+    border-radius: 8%;
+    font-size: 14px;
+    color: #5C5C5C;
+    border: 1px solid #5C5C5C;
 }
-.LabelTwo {
+.LabelTwo, .LabelThree {
     padding-left: 10px;
     padding-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
 }
 
-.SelectTwo {
-    background-color: lightgray;
-}
-
-.LabelThree {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.SelectThree {
-    background-color: lightgray;
-}
 .ShareImage {
     float: right;
-    height: 15px;
+    margin-right: 15px;
+    height: 16px;
 }
