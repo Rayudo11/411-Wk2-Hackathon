@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-import "./styles/App.css";
+import './styles/App.css'
+import './styles/SortByInput.css'
 
 import "./components/HeaderBar";
 import HeaderBar from "./components/HeaderBar";
+import SortByInput from "./components/SortByInput";
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +18,7 @@ class App extends Component {
     };
   }
 
+
   componentDidMount() {
     axios.get('https://hn.algolia.com/api/v1/search?query=...')
     .then((res) => {
@@ -23,21 +26,17 @@ class App extends Component {
       this.setState({ arrayOfStories })
     })
   }
-
-  render() {
-    return (
+ 
+    render() {
+      return (
       <div className="App">
-        <HeaderBar />
-        {/* map over this,state.arrayOfStories */}
-        <ol>{this.state.arrayOfStories.map((hit, i) => {
-          return (
-            <li key={i}>
-              <h5>{hit.title}</h5>
-              </li>
-          )
-        })}</ol>
-      </div>
-    );
+      <HeaderBar/>
+      <SortByInput/>
+     
+
+    </div>
+  );
+
   }
 }
 
