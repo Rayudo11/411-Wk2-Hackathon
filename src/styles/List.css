@@ -1,7 +1,9 @@
-#dataUL {
+.dataUL {
  margin: 0px;
  padding: 16px;
  background-color: #F6F6EF;
+ max-width: 1577px;
+ width: 100vw;
 }
 
 .mapData {

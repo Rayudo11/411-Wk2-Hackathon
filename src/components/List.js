@@ -24,7 +24,7 @@ let List = (props) => {
  }
 
     return (
-    <ul id="dataUL">
+    <ul className="dataUL">
      {apiData.map((item, ix) =>
       <li key={ix} className="mapData">
        <section> 

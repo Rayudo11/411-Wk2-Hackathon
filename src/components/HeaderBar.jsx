@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-
 import LogoLink from "./LogoLink";
 import SearchBarInput from "./SearchBarInput";
 import SettingsButton from "./SettingsButton";
@@ -8,7 +7,7 @@ import "../styles/HeaderBox.css";
 
 function HeaderBar(props) {
   return (
-    <header className="HeaderBox">
+    <header className="HeaderBox" >
       <LogoLink />
       <span className="SeachLabelWrapper">
         <h3 className="SearchLabel">Search </h3>
