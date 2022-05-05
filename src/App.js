@@ -25,5 +25,6 @@ let App = () => {
    <List data={apiData}/>
     </div >
   );
+ }
 
 export default App;
