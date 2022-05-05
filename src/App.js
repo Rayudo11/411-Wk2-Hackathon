@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import List from "./components/List";
 import axios from "axios";
 import './styles/App.css'
@@ -11,6 +11,7 @@ let App = () => {
 
  let [apiData, setApiData] = useState([])
  let [searchTerm, setSearchTerm] = useState('')
+ let searchData = useRef([])
 
  useEffect(() => {
   fetch('https://hn.algolia.com/api/v1/search_by_date?tags=story')
@@ -20,16 +21,12 @@ let App = () => {
 
 
  useEffect(() => {
-const filterSearch = (term) => {
-  console.log(term)
-  return(item) => {
-    console.log(item, 'im the item!!!!!!'); 
-    return item.apiData.title.toLowerCase().includes(term.toLowerCase())
-  }
-};
- }, [apiData]);
+  searchData.current = apiData.filter(e => e.title.toLowerCase().includes(searchTerm.toLowerCase()))
+  
+ }, [searchTerm])
 
 
+console.log(searchData, 'im the search data array')
 
  return (
   <div className="App">
@@ -38,7 +35,12 @@ const filterSearch = (term) => {
     setState={setSearchTerm}
    />
    <SortByInput/>
-   <List data={apiData}/>
+   {
+    searchTerm.length > 0 ? 
+    <List data={searchData.current} />
+    :
+    <List data={apiData}/>  
+   }
     </div >
   );
  }

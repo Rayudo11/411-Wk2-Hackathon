@@ -4,7 +4,7 @@ import '../styles/List.css'
 let List = (props) => {
 
  let apiData = Object.values(props.data) 
- console.log(apiData)
+
 
  let getTime = (date) => {
   let today = new Date()
