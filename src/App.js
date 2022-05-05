@@ -11,6 +11,11 @@ let App = () => {
 
  let [apiData, setApiData] = useState([])
  let [searchTerm, setSearchTerm] = useState('')
+
+ let [dropOne,setDropOne] = useState('')
+ let [dropTwo,setDropTwo] = useState('')
+ let [dropThree,setDropThree] = useState('')
+
  let searchData = useRef([])
 
  useEffect(() => {
@@ -19,22 +24,35 @@ let App = () => {
   .then(data => setApiData(data.hits))
  },[])
 
+//  useEffect(() => {
+//   //  let SelectOne = document.getElementsByClassName('SelectOne').innerHTML
+//   //  let SelectTwo = document.getElementsByClassName('SelectTwo').innerHTML
+//   //  let SelectThree = document.getElementsByClassName('SelectThree').innerHTML
+//    console.log('dropOne:',dropOne,'dropTwo:',dropTwo,'dropThree:',dropThree)
+//  },[dropOne], [dropTwo], [dropThree])
 
  useEffect(() => {
   searchData.current = apiData.filter(e => e.title.toLowerCase().includes(searchTerm.toLowerCase()))
-  
  }, [searchTerm])
 
 
-console.log(searchData, 'im the search data array')
-
  return (
   <div className="App">
+    
    <HeaderBar 
     state={searchTerm}
     setState={setSearchTerm}
    />
-   <SortByInput/>
+   
+   <SortByInput 
+    dropOne={dropOne}
+    setDropOne={setDropOne}
+    dropTwo={dropTwo}
+    setDropTwo={setDropTwo}
+    dropThree={dropThree}
+    setDropThree={setDropThree}
+   />
+
    {
     searchTerm.length > 0 ? 
     <List data={searchData.current} />
